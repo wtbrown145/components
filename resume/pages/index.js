@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Navigation from '../components/navigation'
+import Viewport from '../components/viewport'
 
 export default function Home() {
   return (
@@ -12,18 +13,9 @@ export default function Home() {
 
       <main className={styles.main}>
         <Navigation />
-        <div style={{
-          textAlign: "center",
-          display: "flex",
-          flexDirection: "column",
-          paddingLeft: "25%",
-          paddingRight: "15%"
-        }}>
+        <Viewport>
           <p>
             As a well-established IT leader with a passion for programming, design, and development, I am an ideal candidate for your opening. Having progressed through a series of roles over more than three years, I am excited to apply my skills to produce immediate results as a valuable member of the team.
-          </p>
-
-          <p>
           </p>
 
           <p>
@@ -46,8 +38,7 @@ export default function Home() {
           <p>
             I look forward to discussing my background and your needs in detail, as I am confident that my unique experience will be of great use in meeting your immediate and future objectives. Please contact me at your earliest convenience to schedule an interview; until then, thank you for your consideration.
           </p>
-
-        </div>
+        </Viewport>
       </main>
     </div>
   )

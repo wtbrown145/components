@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Projects.module.css'
 import Navigation from '../components/navigation'
+import Viewport from '../components/viewport'
 
 export default function Projects(){
     return (
@@ -12,8 +13,10 @@ export default function Projects(){
   
         <main className={styles.main}>
           <Navigation />
+          <Viewport>
+              
+          </Viewport>
         </main>
       </div>
     )
-
 }
