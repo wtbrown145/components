@@ -14,6 +14,7 @@ export default function Resume() {
         <main className={styles.main}>
           <Navigation />
           <Viewport>
+            <h1>Resume</h1>
             <h2>Programmer Profile</h2> 
             <b><i>Technically sophisticated professional with expertise in developing and delivering best-in-class applications, while ensuring optimal functionality and compliance with user requirements.</i></b>
             <hr style={{width: "100%"}}/>
@@ -46,24 +47,32 @@ export default function Resume() {
             <h2>Professional Experience</h2>
             <div><p style={{float: "left"}}><b>Application Developer I, II, &amp; III</b> (3/2018 – Present)</p><p style={{float: "right"}}>ARGO Data Resource Corp., Richardson, TX</p></div>
             <p>
-                <i>Technical Scope:</i> JavaScript, C#, HTML, XSL, XML, CSS, JSON, jQuery
-                <br />
-                Conduct overall stack maintenance and development in multiple languages. Design, develop, and maintain automation tools for evaluations, debugging, and upgradation purposes. 	
-                Led full application upgrade and deployment project from IE to Chrome and Edge. 
-                Identified and resolved applications defects (10-20 average defects/sprint) on daily basis in close collaboration with product managers, QA, and developers. 
-                Develop and maintain multitude of automation scripts for analyzing logs and generating spreadsheets for enabling more efficient debugging/visualization of defect data. 
-                Devise C# scripts for evaluation of JavaScript, HTML, and XSL code base as well as convert it from IE Quirks standards to current Chrome and Edge HTML 5 standards. 
-                Participated in daily triage meetings to scrutinize validity of defects; foster relationships with development team leads/managers, QA team leads, and managers.
-                <br />
-                <b><i>Key Achievements:</i></b>
-                    <li className={styles.listItem}>Developed, deployed solutions to application issues in accordance with latest regulations and customer requirements; served as subject matter expert (SME) for current browser framework and MVC pattern.</li> 
-                    <li className={styles.listItem}>Diminished database table creation by 10% via continuous process improvements.</li>
-                    <li className={styles.listItem}>Created and implemented latest real estate loan features and banking regulations.</li>
-                <b><i>Key Projects:</i></b>
-                    <li className={styles.listItem}>Created multiple C# scripts for analyzing, annotating, and resolving JavaScript to ensure compliance with organizational and internet programming standards.</li> 
-                    <li className={styles.listItem}>Developed C# script for accurately searching specific files among 15K files through regular expressions.</li>
-                    <li className={styles.listItem}>Programmed C# scripts for parsing and analyzing application logs for specific issues, which complied data into spreadsheets and charts for efficient resolution of issues.</li>
+              <i>Technical Scope:</i> JavaScript, C#, HTML, XSL, XML, CSS, JSON, jQuery
+              <br />
+              Conduct overall stack maintenance and development in multiple languages. Design, develop, and maintain automation tools for evaluations, debugging, and upgradation purposes. 	
+              Led full application upgrade and deployment project from IE to Chrome and Edge. 
+              Identified and resolved applications defects (10-20 average defects/sprint) on daily basis in close collaboration with product managers, QA, and developers. 
+              Develop and maintain multitude of automation scripts for analyzing logs and generating spreadsheets for enabling more efficient debugging/visualization of defect data. 
+              Devise C# scripts for evaluation of JavaScript, HTML, and XSL code base as well as convert it from IE Quirks standards to current Chrome and Edge HTML 5 standards. 
+              Participated in daily triage meetings to scrutinize validity of defects; foster relationships with development team leads/managers, QA team leads, and managers.
+              <br />
+              <br />
+              <b><i>Key Achievements:</i></b>
             </p>
+            <ul className={styles.listContainer}>
+              <li className={styles.listItem}>Developed, deployed solutions to application issues in accordance with latest regulations and customer requirements; served as subject matter expert (SME) for current browser framework and MVC pattern.</li> 
+              <li className={styles.listItem}>Diminished database table creation by 10% via continuous process improvements.</li>
+              <li className={styles.listItem}>Created and implemented latest real estate loan features and banking regulations.</li>
+            </ul>
+            <p>
+                <b><i>Key Projects:</i></b>
+            </p>
+
+            <ul className={styles.listContainer}>
+              <li className={styles.listItem}>Created multiple C# scripts for analyzing, annotating, and resolving JavaScript to ensure compliance with organizational and internet programming standards.</li> 
+              <li className={styles.listItem}>Developed C# script for accurately searching specific files among 15K files through regular expressions.</li>
+              <li className={styles.listItem}>Programmed C# scripts for parsing and analyzing application logs for specific issues, which complied data into spreadsheets and charts for efficient resolution of issues.</li>
+            </ul>
             
             <hr style={{width: "100%"}}/>
 

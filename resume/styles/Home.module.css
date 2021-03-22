@@ -124,3 +124,9 @@
 .listItem {
     text-align: justify;
 }
+
+.listContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}

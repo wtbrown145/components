@@ -30,7 +30,7 @@ class Navigation extends React.Component {
             <Link href="/projects">
                 <a><h2 className={styles.navItem}>Projects</h2></a>
             </Link>
-            <Link href="">
+            <Link href="/contact">
                 <a><h2 className={styles.navItem}>Contact</h2></a>
             </Link>
         </div>

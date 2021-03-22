@@ -14,6 +14,8 @@ export default function Home() {
       <main className={styles.main}>
         <Navigation />
         <Viewport>
+          <h1>William T. Brown - Web Developer</h1>
+          <h2>About Me</h2>
           <p>
             As a well-established IT leader with a passion for programming, design, and development, I am an ideal candidate for your opening. Having progressed through a series of roles over more than three years, I am excited to apply my skills to produce immediate results as a valuable member of the team.
           </p>
@@ -23,20 +25,19 @@ export default function Home() {
           </p>
 
           <p>
-            Furthermore, I would bring the following strengths to your team: 
-              <li>
-                Stack Maintenance &amp; Development 
-              </li>
-              <li>
-                Data Research &amp; Analysis  
-              </li>
-              <li>
-                Tools &amp; Script Development  
-              </li>
+            Furthermore, I would bring the following strengths to your team:
           </p>
+          <ul className={styles.listContainer}>
+            <li className={styles.listItem}>Stack Maintenance &amp; Development</li>
+            <li className={styles.listItem}>Data Research &amp; Analysis</li>
+            <li className={styles.listItem}>Tools &amp; Script Development</li>
+          </ul>
 
           <p>
-            I look forward to discussing my background and your needs in detail, as I am confident that my unique experience will be of great use in meeting your immediate and future objectives. Please contact me at your earliest convenience to schedule an interview; until then, thank you for your consideration.
+            Learning and growing are two of my biggest passions, both in my professional and personal life.
+            I am a curious, hard-working, self-driven individual who would love to put these traits to work for you.
+            <br />
+            I encourage you to click through my resume and peruse some of my projects, and thank you for taking the time.
           </p>
         </Viewport>
       </main>

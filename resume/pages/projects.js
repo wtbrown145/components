@@ -14,6 +14,7 @@ export default function Projects(){
         <main className={styles.main}>
           <Navigation />
           <Viewport>
+            <h1>Projects</h1>
               
           </Viewport>
         </main>
