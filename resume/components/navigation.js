@@ -4,23 +4,30 @@ import Link from 'next/link'
 import styles from '../styles/Navigation.module.css'
 
 class Navigation extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = {expanded: true};
+        this.toggleState = this.toggleState.bind(this);
+    }
+
+
+
+    toggleState(e){
+        this.setState({expanded: !this.state.expanded});
+    }
+
     render() {
-        return <div 
-            style={{
-                height: "100%",
-                width: "15%",
-                position: "fixed",
-                zIndex: "1",
-                top: "0",
-                left: "0",
-                backgroundImage: "linear-gradient(to right, #00853E, #00A950 70%, #C4D600 95%)",
-                paddingTop: "20px",
-                display: "flex",
-                flexDirection: "column",
-                overflowX: "hidden",
-                alignItems: "center"
-            }}
-        >
+        var expansion = "", expanderText = "";
+        if(this.state.expanded){
+            expansion = styles.navMenu + " " + styles.expanded;
+            expanderText = "COLLAPSE";
+        }
+        else{
+            expansion = styles.navMenu + " " + styles.collapsed;
+            expanderText = "EXPAND";
+        }
+
+        return <div className={expansion}>
             <Link href="/">
                 <a><h2 className={styles.navItem}>About</h2></a>
             </Link>
@@ -33,6 +40,8 @@ class Navigation extends React.Component {
             <Link href="/contact">
                 <a><h2 className={styles.navItem}>Contact</h2></a>
             </Link>
+            {/* <p className={styles.expander} onClick={this.toggleState}>EXPANDER</p> */}
+            <div className={styles.expander} onClick={this.toggleState}>{expanderText}</div>
         </div>
     }
 }

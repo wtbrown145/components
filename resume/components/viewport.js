@@ -15,7 +15,6 @@ class Viewport extends React.Component {
             paddingLeft: "25%",
             paddingRight: "15%",
             paddingBottom: "10%",
-            backgroundImage: "linear-gradient(to right, #C4D600 15%, white 16%)",
             overflow: "auto"
           }}>
               {this.props.children}
